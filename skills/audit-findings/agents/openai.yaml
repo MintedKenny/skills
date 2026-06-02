@@ -1,0 +1,6 @@
+interface:
+  display_name: "Audit Findings"
+  short_description: "Cross-audit a list of findings: pressure-test each, stabilize, and surface what was missed."
+  default_prompt: "Use $audit-findings to pressure-test the findings or recommendations already in scope."
+policy:
+  allow_implicit_invocation: true

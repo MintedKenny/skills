@@ -1,0 +1,6 @@
+interface:
+  display_name: "Investigate"
+  short_description: "PR-grade investigation: deep dive, options, and a ranked recommendation — no code."
+  default_prompt: "Use $investigate to investigate the issue or request and return a recommendation, not an implementation."
+policy:
+  allow_implicit_invocation: true

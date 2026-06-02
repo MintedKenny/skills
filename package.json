@@ -1,0 +1,13 @@
+{
+  "name": "skills",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Public Agent Skills for coding agents.",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-skills.mjs"
+  },
+  "devDependencies": {
+    "yaml": "^2.8.2"
+  }
+}
