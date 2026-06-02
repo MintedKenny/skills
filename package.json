@@ -5,9 +5,11 @@
   "description": "Public Agent Skills for coding agents.",
   "type": "module",
   "scripts": {
-    "validate": "node scripts/validate-skills.mjs"
+    "validate": "node scripts/validate-skills.mjs",
+    "skills": "skills"
   },
   "devDependencies": {
+    "skills": "1.5.6",
     "yaml": "^2.8.2"
   }
 }
