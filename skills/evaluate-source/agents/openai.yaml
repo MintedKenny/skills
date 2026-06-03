@@ -1,0 +1,6 @@
+interface:
+  display_name: "Evaluate Source"
+  short_description: "Evaluate an article, repo, tweet, or docs for ideas worth borrowing — a ranked verdict per idea."
+  default_prompt: "Use $evaluate-source to evaluate the external content for ideas worth borrowing into your system."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Linear Issues"
+  short_description: "Decompose findings into well-scoped Linear issue drafts (one issue = one PR) and ask before filing."
+  default_prompt: "Use $linear-issues to draft well-scoped Linear issues from the findings and ask before filing."
+policy:
+  allow_implicit_invocation: true

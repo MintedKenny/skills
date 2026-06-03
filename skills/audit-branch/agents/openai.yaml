@@ -1,0 +1,6 @@
+interface:
+  display_name: "Audit Branch"
+  short_description: "Critically audit a branch's changes: verdict, design audit, strategic implications, ranked recommendations."
+  default_prompt: "Use $audit-branch to critically review the changes on this branch and decide whether they're good and complete."
+policy:
+  allow_implicit_invocation: true
