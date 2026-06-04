@@ -1,0 +1,6 @@
+interface:
+  display_name: "Setup AD"
+  short_description: "Set up an architecture-decision archive, agent-context index, and hard-rules table."
+  default_prompt: "Use $setup-ad to install an architecture-decision archive and agent-context index in this repo."
+policy:
+  allow_implicit_invocation: true
