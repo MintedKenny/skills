@@ -26,6 +26,7 @@ npx skills add MintedKenny/skills --skill investigate --agent codex
 - [`evaluate-source`](./skills/evaluate-source/SKILL.md): evaluate external content (article, repo, tweet, docs) for ideas worth borrowing — a ranked verdict per idea.
 - [`investigate`](./skills/investigate/SKILL.md): PR-grade investigation of an issue or request — deep dive, options, and a ranked recommendation, no code.
 - [`linear-issues`](./skills/linear-issues/SKILL.md): decompose findings into well-scoped Linear issue drafts (one issue = one PR) and ask before filing.
+- [`parallel-research`](./skills/parallel-research/SKILL.md): launch Parallel.ai deep research from the terminal and write a cited Markdown report.
 
 ## License
 
