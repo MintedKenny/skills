@@ -1,10 +1,11 @@
 #!/usr/bin/env node
-// Parallel research substrate — launch a Parallel.ai deep-research task and write a cited report.
+// Parallel research substrate — launch a Parallel.ai research task and write a cited report.
 //
 // Dependency-free dev tooling (Node 18+ global `fetch`, zero npm deps). It is a DUMB
 // cross-tool substrate: it submits an ALREADY-FRAMED query, polls to completion, and
-// writes a markdown report. The caller owns framing and picks the tier per question.
-// Callable from Claude Code, Codex, or a plain terminal.
+// writes a markdown report. It does NO domain-specific framing and holds NO type→tier
+// table — the caller owns framing and picks the tier per question. Callable from
+// Claude Code, Codex, or a plain terminal.
 //
 // Consent boundary (enforced by the calling skill, restated here): never send client or
 // engagement data, secrets, credentials, or nonpublic case facts to Parallel. The
@@ -44,7 +45,7 @@ const POLL_DELAYS_MS = [3_000, 5_000, 8_000, 13_000]; // then steady POLL_STEADY
 const POLL_STEADY_MS = 20_000;
 const MAX_TRANSIENT_RETRIES = 5;
 
-const USAGE = `parallel-research — launch a Parallel.ai deep-research task and write a cited report
+const USAGE = `parallel-research — launch a Parallel.ai research task and write a cited report
 
   node <skill-dir>/scripts/run.mjs --query <text|@file|-> [flags]
 
