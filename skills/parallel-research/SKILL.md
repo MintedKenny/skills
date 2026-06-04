@@ -1,6 +1,6 @@
 ---
 name: parallel-research
-description: Launch Parallel.ai deep research from the terminal and write a cited Markdown report. Use for public-safe dev, architecture, standards, and prior-art research.
+description: Run public-safe Parallel.ai research from the terminal and write a cited Markdown report for dev, architecture, standards, and prior-art questions.
 metadata:
   source: "MintedKenny/skills"
   homepage: "https://github.com/MintedKenny/skills"
@@ -8,7 +8,7 @@ metadata:
 
 # Parallel Research
 
-Run external deep research with Parallel.ai and write back a cited report. Use this when a coding or product question needs public-source research: prior art, standards, architecture choices, implementation techniques, thresholds, or trade-offs.
+Run external research with Parallel.ai and write back a cited report. Use this when a coding or product question needs public-source research: prior art, standards, architecture choices, implementation techniques, thresholds, or trade-offs.
 
 The bundled runner is `scripts/run.mjs`. It submits an already-framed query to Parallel, polls to completion, and writes a Markdown report. The skill owns the workflow and safety checks; the runner owns the API call.
 
@@ -20,7 +20,7 @@ When another workflow or indirect request would trigger research, confirm before
 
 ## Frame The Question
 
-State the question precisely and ask for specific, cited findings. Name the figures, thresholds, standards, tools, papers, or implementation approaches you want back.
+State the question precisely and ask for specific, cited findings. Name the figures, thresholds, standards, tools, papers, or implementation approaches you want back. Frame it neutrally: ask for evidence across the field, not confirmation of a conclusion you already hold. The recommendation is yours to draw from the findings afterward, not the engine's to hand you.
 
 Good research prompts include:
 
